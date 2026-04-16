@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-900: #0a0e17;
+  --color-cyber-800: #0f1629;
+  --color-cyber-700: #151d35;
+  --color-cyber-600: #1c2644;
+  --color-cyber-500: #243055;
+  --color-cyber-400: #374a77;
+  --color-cyber-300: #4e6699;
+  --color-cyber-200: #7a94bb;
+  --color-cyber-100: #b0c4de;
+  --color-neon-green: #00ff88;
+  --color-neon-blue: #00d4ff;
+  --color-neon-red: #ff3366;
+  --color-neon-yellow: #ffcc00;
+  --color-neon-purple: #bf5af2;
+}
+
+body {
+  background-color: #0a0e17;
+  color: #e2e8f0;
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1629;
+}
+::-webkit-scrollbar-thumb {
+  background: #243055;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #374a77;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(0, 255, 136, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.6); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.glass-card {
+  background: rgba(15, 22, 41, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(36, 48, 85, 0.6);
+}
